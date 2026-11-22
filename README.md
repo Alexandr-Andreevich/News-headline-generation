@@ -3,9 +3,9 @@
 Ссылка на модель в [Google Colab](https://colab.research.google.com/drive/1X9ZxtFLjJo6YF1V3Wwm2IhC6RSuFQPQO?usp=sharing#scrollTo=oqxsf1lG69C_)
 
 ## Описнаие
-В данной работе я использовал датасет от IlyaGusev/gazeta и модель sberbank-ai/rugpt3medium_based_on_gpt2, которая хорошо подходит для русскоязычных текстов.
+В данной работе я использовал датасет от **IlyaGusev/gazeta** и модель **sberbank-ai/rugpt3medium_based_on_gpt2**, которая хорошо подходит для русскоязычных текстов.
 
-Перед подачей данных модели, была проведена очистка текст от HTML-тегов, нормализация пробелов, обрезал длинну текста до разумной длины, чтобы модель не теряла фокус. Использовал Trainer с EarlyStoppingCallback и DataCollatorForLanguageModeling для дообучения GPT.
+Перед подачей данных модели, была проведена очистка текст от HTML-тегов, нормализация пробелов, обрезал длинну текста до разумной длины, чтобы модель не теряла фокус. Использовал **Trainer** с **EarlyStoppingCallback** и **DataCollatorForLanguageModeling** для дообучения GPT.
 
 График потерь показывает, что модель не переобучается, и есть потенциал для дальнейшего обучения.
 
